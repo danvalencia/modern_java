@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="/styles.css"/>
+  </head>
+  <body>
+  <div class="product-grid">
+    {{#products}}
+      <div class="product-cell">
+          <span>Name: {{name}}</span>
+          <span>Sku: {{sku}}</span>
+          <span>Price: {{salePrice}}</span>
+          <img src="{{image}}" alt="{{name}}"/>
+      </div>
+    {{/products}}
+  </div>
+  </body>
+</html>
